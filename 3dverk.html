@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/face.jpg" alt="" /></span>
+							<h1 id="title">Magnús Snær Ríkarðsson</h1>
+							<p>BS Industrial Engineering</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html" id="top-link"><span class="icon solid fa-home">Back home</span></a></li>
+				            </ul>
+						</nav>
+
+				</div>   
+                
+        
+            
+                <div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/SsonRikar" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100002526551639" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/MagnusRikardsson" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							
+						</ul>
+
+				</div>
+
+			</div>
+        
+        <!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">This is my Third project: <strong>3D printing and scanning.</strong>
+								<p>This project was completed in two parts. First, I will go into details how I designed a 3D model and printed it and then I will do the same about how I 3D scanned an object. <br />
+                                </p></h2>
+							</header>
+                             
+                            
+						</div>
+					</section>
+                        
+                            <h2 style="text-align: center">3D Printing</h2><br />
+                            <p style="text-align: center"> The following programs were used to execute this part of the project:
+                            <h2 style="text-align: center"> - Fusion 360 <br />
+                            -<a href="https://ultimaker.com/software/ultimaker-cura">Cura</a></h2> <br />
+                
+                            <h3 style="text-align: center">Determine the constrains of the 3D printer</h3> 
+                                <p style="text-align: center">Determining the constrains of the 3D printer was worked in a group. My groupmembers were Hrannar Þórarinsson, <a href="https://hrannarth.github.io/">his website</a> and Stefán Már Helgason, <a href="https://stefanmar96.github.io/index.html">his website</a>.</p>
+                                <p style="text-align: center">We went on to Thingiverse and found <a href="https://www.thingiverse.com/thing:2975429">this</a> printertest and decided to use that. We downloaded that file and went to fablab Reykjavik</p>
+                                <p style="text-align: center">Since all the 3D printers in fablab would be occupied all day, the day we went there. We were told to see the same thing printed by another group and determine the printers constrains from that object. This is the object that we used</p>
+                                <p style="text-align:center;"><img src="images/3dprufa.jpg" height="450" width="" alt="" />
+                                <p style="text-align: center">As can be seen, it would not be recommended to print something that has more that a 75° slope or things that are really close together.</p>
+                
+                            <h3 style="text-align: center">Design and printing</h3> 
+                
+                            <p style="text-align: center">I began with deciding what I should design and concluded that a coffee cup, used for pens and pencils, was a nice idea. Next, I designed a prototype based on a <a href="https://www.youtube.com/watch?v=NZ70J2oe0W4&t=109s">YouTube</a> video: </p>
+                            <center><img src="images/prot.jpg" height="" width="" alt="" /></center>
+                            
+                            <p style="text-align: center">Now I had something I could base my model design on. I watched a <a href="https://youtu.be/3PnKBSOulwo?t=137">YouTube</a> video and used the first part in the video for design where I created the curve on my cup using fit point spline and the revolve command: </p>
+                
+                            <center><img src="images/gg.jpg" height="" width="" alt="" /></center>
+                            <center><img src="images/rev.jpg" height="" width="" alt="" /></center>
+                            
+                            <p style="text-align: center">Next, I created a new sketch to draw the handle on the cup. I drew two rectangles, like those that represented the handle on the coffee cup from the prototype. Then I used a fit point spline and created a spline on the corner points of the rectangles. After I finished this sketch my design looked like this:</p>
+                
+                            <center><img src="images/boom.jpg" height="" width="" alt="" /></center>
+                            <p style="text-align: center">Then I extruded the handle 5mm each way and used the fillet command to round the edges of the handle:</p>
+                            <center><img src="images/bol.jpg" height="" width="" alt="" /></center>
+                            <p style="text-align: center">Now all I had to do was making the body hollow and I did that by using the shell command and then I rounded the edges with the fillet command. Now I had a good-looking coffee cup:</p>
+                
+                            <center><img src="images/bolli.jpg" height="" width="" alt="" /></center>
+                            <p style="text-align: center">But then I noticed the bottom of the handle was a little longer than the cup itself:</p>
+                            <center><img src="images/galli.jpg" height="" width="" alt="" /></center>
+                            <p style="text-align: center">To fix this I created a plane and used the extrude command to cut of this part. Now my design was complete. The next step was downloading Cura and saving my body as STL. I watched a YouTube video that showed me recommended settings for Cura. Then I uploaded the model to Cura and sliced it, but it was heavier than 100g. So I used the scale command and used the scale factor 0,75. I uploaded this smaller model to Cura and sliced it with the profile set as 0.2 and 10% infill. Now my design was under 100g and I could start to 3D print it.</p>
+                            
+                            <center><img src="images/cura.jpg" height="450" width="" alt="" /></center>
+                
+                            <p style="text-align: center">I used the Prusa 3D printer. Shortly after I started to 3D print my coffee cup this error came up:</p>
+                            <center><img src="images/e.jpg" height="450" width="" alt="" /></center>
+                            <p style="text-align: center">I tried to start again but soon the same error came up so I decided to change some settings in Cura. I added adhesion and support because myself and my teacher thought that might work, the error kept coming up probably because the start of the cup and handle were both on the ground and not connected. By adding adhesion the start of the cup and handle had now the same base. I also added support because the handle might fall off without it. Now it started printing without any interference.</p> 
+                            <center><img src="images/1.jpg" height="450" width="" alt="" /></center>
+                
+                            <p style="text-align: center">Here is how my coffee cup looked after it had finished printing:</p>
+                            <center><img src="images/a.jpg" height="450" width="" alt="" /></center>
+                            <center><img src="images/b.jpg" height="450" width="" alt="" /></center>
+                            <center><img src="images/c.jpg" height="450" width="" alt="" /></center>
+                            <center><img src="images/d.jpg" height="450" width="" alt="" /></center><br />
+                
+                            <h2 style="text-align: center">3D Scanning</h2><br />
+                            
+                            <p style="text-align: center"> The following program were used to execute this part of the project:
+                            <h2 style="text-align: center"> 
+                            - <a href="https://www.3dflow.net/3df-zephyr-free/">3D Zephyr</a></h2> <br />
+                            
+                            <p style="text-align: center">I began with finding a object that would be ideal to 3D scan. I found a old trophy in my classroom and took 30 photos from every angel of the object. Here you can see the trophy that I used for this part of the project: </p>
+                                
+                            <center><img src="images/bikar.jpg" height="450" width="" alt="" /></center><br />
+                             
+                            <p style="text-align: center">Next I installed 3D Zephyr and uploaded the pictures I took to the program. I chose close range as the category because the trophy was close to the camera when I took the photos and Deep as the presets because that increases the number of keypoints and makes the scan more detailed. Then I extracted the keypoints and only 3 photos of the 30 I took were not used when the program generated a sparse point cloud. The final thing to do was creating a dense point cloud. I did that by using the dense point cloud generation under the workflow bar. I used the settings: close range and high details to get the best quality. This took up to half an hour to run</p><br />
+                
+                            <p style="text-align: center">To showcase the 3D scan I used the keypoints animator in 3D Zephyr to create a 360 view of the object and then I screenrecorded it and here below is the view of the final product:
+                            
+                            <center><iframe width="560px" height="320px" allowfullscreen="true" src="https://haskoliislands.instructuremedia.com/embed/a6f24d06-c947-4264-a694-7a8d640953cb" frameborder="0"></iframe></center><br />
+                            
+                            <h2 style="text-align: center">Time log</h2>
+                            
+                            <TABLE >
+                               <TR>
+                                  <TD><b>TASK:</b></TD>
+                                  <TD><b>TIME:</b></TD>
+                               </TR>
+                               <TR>
+                                  <TD>Determining the constraints of the 3D printer</TD>
+                                  <TD>1.5 hours</TD>
+                               </TR>
+                               <TR>
+                                  <TD>Finding inspiration for a 3D design</TD>
+                                  <TD>1 hour</TD>
+                               </TR>
+                                <TR>
+                                  <TD>Completeing the design in Fusion</TD>
+                                  <TD>3 hours</TD>
+                               </TR>
+                                <TR>
+                                  <TD>Studying Cura and using it to slice the object</TD>
+                                  <TD>1 hour</TD>
+                               </TR>
+                                <TR>
+                                  <TD>Preparing for 3D printing and fixing errors</TD>
+                                  <TD>1 hour</TD>
+                               </TR>
+                                <TR>
+                                  <TD>3D scanning a object using 3D Zephyr</TD>
+                                  <TD>3 hours</TD>
+                               </TR>
+                                <TR>
+                                  <TD>Documentation</TD>
+                                  <TD>3 hours</TD>
+                               </TR>
+                                <TR>
+                                  <TD></TD>
+                                  <TD>TOTAL = 13.5 hours</TD>
+                               </TR>
+                            </TABLE>
+        
+                
+                
+                
+                
+                
+                
+                
+                         </div>

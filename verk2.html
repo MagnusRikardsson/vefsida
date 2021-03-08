@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/face.jpg" alt="" /></span>
+							<h1 id="title">Magnús Snær Ríkarðsson</h1>
+							<p>BS Industrial Engineering</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html" id="top-link"><span class="icon solid fa-home">Back home</span></a></li>
+				            </ul>
+						</nav>
+
+				</div>   
+                
+        
+            
+                <div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/SsonRikar" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100002526551639" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/MagnusRikardsson" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							
+						</ul>
+
+				</div>
+
+			</div>
+        
+        <!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">This is my second project: <strong>Creating a press fit model .</strong>
+								<p>Here below I will go into details about how I designed my press fit model and how I used a laser cutter to carve out my design.<br />
+                                    </p></h2>
+							</header>
+                             
+
+						</div>
+					</section>
+                        
+                            <p style="text-align: center">The first thing I did was seeking inspiration from google about fun press fit designs that I could build my design on. After some time, I found this book stand from <a href="https://www.amazon.co.uk/Acrylic-Display-Picture-Cookbook-Bookrest/dp/B082D1FWNL">Amazon</a> and used that as an inspiration for my design. 
+                            <p style="text-align: center"> The following programs were used to complete this project:
+                            <h2 style="text-align: center"> - Fusion 360 <br />
+                            -<a href="https://inkscape.org/about/">Inkscape</a> <br />
+                            -<a href="https://apps.autodesk.com/FUSION/en/Detail/Index?id=7634902334100976871&os=Win64&appLang=en&fbclid=IwAR3raJ67AUx9KRBJXmsyscjA7rGcy2bmBBz4Ms_xXC_pKGSW2tv1tnTdIfM">DXF for laser</a></h2> 
+                            
+                            <br />
+                            <p style="text-align: center">In Fusion I started with creating a sketch for the support foot of my book stand. I drew the lines, so the foot was similar to the one of the book stand I found on Amazon. I then modified the parameters of the dimensions so the book stand could hold a book that was minimum 170mm(length) and maximum 35mm(thick). On the image below you can see the user parameters I used:</p>
+                                
+                            <center><img src="images/pm.jpg" height="250" width="" alt="" /></center>
+                            <br />
+                            <p style="text-align: center">The following sketch was made and then extruded 4mm, the edges of the foot were smoothed out with the fillet command and then the body was copied to represent the other foot of the book stand:
+                            <center><img src="images/sketch.jpg" height="450" width="" alt="" /></center>
+                            <center><img src="images/2bod.jpg" height="450" width="" alt="" /></center>
+                            <br />
+                            <p style="text-align: center">Now all I needed was a support between the two bodies to complete my design. I got some help from a video on <a href="https://youtu.be/7riGolu7BpA?t=660">Youtube</a> to execute this task. Now my design was completed in Fusion 360. Here you can see both the support and the complete design:
+                            <center><img src="images/sup.jpg" height="450" width="" alt="" /></center>
+                            <center><img src="images/100.jpg" height="450" width="" alt="" /></center> <br /> 
+                                
+                            <h2 style="text-align: center">Measuring the kerf</h2>
+                
+                            <p style="text-align: center">Measuring the kerf was worked in a group. My groupmembers were Hrannar Þórarinsson, <a href="https://hrannarth.github.io/">his website</a> and Stefán Már Helgason, <a href="https://stefanmar96.github.io/index.html">his website</a>.</p>
+                            <p style="text-align: center">We went to fablab Reykjavík and in fusion 360 we drew a 100*10mm rectangle with cut-lines with 10mm intervals inside the rectangle. We sent that file to the laser cutter and ended up with the following:</p>
+                            <p style="text-align:center;"><img src="images/kerfcut.jpg" height="60%" width="60%" alt="" />
+                            <p style="text-align: center">After that we took one square out of the rectangular space and measured the empty space, that space was measuerd to be 12,08mm. Next we measured the square that we removed, that square was measured to be 9,8mm. In total there were 11 lasercuts done on the rectangle so to measure the kerf we used the formula (12,08-9,8)/11 = <b>0,207</b> which is our kerf.</p>
+                            <p style="text-align:center;"><img src="images/measuring.jpg" height="60%" width="60%" alt="" />
+                            
+                            <br /> 
+                                
+                            <h2 style="text-align: center">Laser cutting</h2>
+                            <p style="text-align: center"> Next, I downloaded DXF for laser and Inkscape. I had to save each body in fusion under the create bar and selected “save DXF for laser cutting”, this generates a DXF file accounting for the kerf of laser cutting. The laser kerf my group measured was 0,207mm, as stated above. Next, I opened Inkscape and copied the DXF files into Inkscape. I used Inkscape to join selected nodes on the bodies. Then I set the line width to 0,02mm and exported the file as a PDF so the laser cutter would be able to read it. </p>
+                            <br />
+                            <p style="text-align: center"> Now the next step was to cut out my design and that took place at Fablab Reykjavík. The material I used was plywood. I used the laser cutting manual in Fablab to help me setup correctly before I started. It took the laser cutter few minutes to carve out my design and here is what it looks like put together:  </p>
+                            <br />
+                            <center><img src="images/laserB.jpg" height="450" width="" alt="" /></center>
+                            <center><img src="images/full.jpg" height="" width="" alt="" /></center>
+                            <br />
+                            <p style="text-align: center"> The final test was to try out my new book stand and on the images below you can see it in action.</p>
+                            <br />
+                            <center><img src="images/BokA.jpg" height="850" width="" alt="" /></center>
+                            <center><img src="images/BokB.jpg" height="850" width="" alt="" /></center>
+                            <center><img src="images/BokC.jpg" height="850" width="" alt="" /></center>
+                            <center><img src="images/BokD.jpg" height="850" width="" alt="" /></center>
+                            <br/> 
+                                
+                            <h2 style="text-align: center">Time log</h2>
+                            
+                            <TABLE >
+                               <TR>
+                                  <TD><b>TASK:</b></TD>
+                                  <TD><b>TIME:</b></TD>
+                               </TR>
+                               <TR>
+                                  <TD>Finding inspiration</TD>
+                                  <TD>2 hours</TD>
+                               </TR>
+                               <TR>
+                                  <TD>Completing design in Fusion</TD>
+                                  <TD>10 hours</TD>
+                               </TR>
+                                <TR>
+                                  <TD>Measuring kerf</TD>
+                                  <TD>1 hour</TD>
+                               </TR>
+                                <TR>
+                                  <TD>Using and studying DXF for laser to add kerf</TD>
+                                  <TD>2 hours</TD>
+                               </TR>
+                                <TR>
+                                  <TD>Using and studying Inkscape to prepare design for laser cutting</TD>
+                                  <TD>3 hours</TD>
+                               </TR>
+                                <TR>
+                                  <TD>Laser cutting and assembling</TD>
+                                  <TD>15 minutes</TD>
+                               </TR>
+                                <TR>
+                                  <TD>Documentation</TD>
+                                  <TD>2 hours</TD>
+                               </TR>
+                                <TR>
+                                  <TD ></TD>
+                                  <TD >TOTAL = 20 hours and 15 minutes</TD>
+                               </TR>
+                            </TABLE>
+                                                    
+                    </div>
+                
+                       
+                
+                
+            
+        
